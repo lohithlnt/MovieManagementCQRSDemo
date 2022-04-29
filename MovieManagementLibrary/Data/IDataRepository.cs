@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MovieManagementLibrary.Models;
 
 namespace MovieManagementLibrary.Data
 {
-    internal interface IDataRepository
+    public interface IDataRepository
     {
+        List<MovieModel> GetMovies();
+        MovieModel AddMovie(MovieModel movie);
     }
 }
